@@ -1,0 +1,18 @@
+nav{
+    overflow: hidden;
+}
+.navLeft{
+    float:left;
+}
+.navRight{
+    float:right;
+}
+.navLeft ul li{
+    display: inline-block;
+    margin-right: 12px;
+    border: 1px solid rgb(167, 255, 167);    
+}
+.navLeft ul li a{
+    color: white;
+    padding: 5px;    
+}

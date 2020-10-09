@@ -1,0 +1,22 @@
+*{
+    margin:0;    
+}
+
+.img-fluid{
+    width: 200px;
+    border-radius: 2px;
+}
+.container{
+    margin: 0 auto;
+    width: 75%;
+}
+
+.d-left{
+    float: left;
+    width: 50%;
+    
+}
+.d-right{
+    float: right;
+    width: 50%;
+}

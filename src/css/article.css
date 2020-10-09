@@ -1,0 +1,12 @@
+.article{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+h1{
+    color: rgb(189, 255, 177);
+}
+p{
+    color: white;
+    text-align: justify;
+}
