@@ -2,24 +2,27 @@ import React from 'react';
 import './css/navigation.css';
 import SearchBar from './SearchBar';
 
-class Navigation extends React.Component{
+class Navigation extends React.Component {
+    changeDirectory = (lien) => {
+        console.log(lien)
+    }
     render() {
-        return(
+        return (
             <nav>
                 <div className="navLeft">
                     <ul>
                         <li>
-                            <a>
+                            <a onClick={() => this.changeDirectory('Accueil')}>
                                 Link 1
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a onMouseOver={() => this.changeDirectory('Galerie')}>
                                 Link 2
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a onDoubleClick={() => this.changeDirectory('Contact')}>
                                 Link 3
                             </a>
                         </li>
@@ -27,7 +30,7 @@ class Navigation extends React.Component{
                 </div>
 
                 <div className="navRight">
-                    <SearchBar/>
+                    <SearchBar />
                 </div>
             </nav>
         );

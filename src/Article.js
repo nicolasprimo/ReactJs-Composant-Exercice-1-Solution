@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import './css/article.css';
 import toast from './images/toast.jpg'
 
-class Article extends React.Component{
-    render(){
-        return(
+class Article extends React.Component {
+    render() {
+        return (
             <Fragment>
                 <div className="article">
                     <div className="d-left">
@@ -16,7 +16,7 @@ class Article extends React.Component{
                     </div>
                 </div>
             </Fragment>
-                 
+
         )
     }
 }
