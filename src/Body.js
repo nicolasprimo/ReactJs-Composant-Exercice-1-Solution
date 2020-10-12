@@ -3,23 +3,15 @@ import './css/body.css';
 import Article from './Article'
 
 class Body extends React.Component {
-    nombreArticles = "2";
+    nombreArticles = (nbrarticle) => {
+        console.log(nbrarticle)
+    };
     render() {
         return (
             <section id="body">
                 <div className="container">
-                    {
-                        this.nombreArticles >= 2 &&
-                        <div>
-                            <Article titre="Les tartines" />
-                            <Article titre="Coding School" />
-                        </div>
-                    }
-                    {
-                        this.nombreArticles < 2 &&
-                        <h1>Il n'y a pas d'articles </h1>
-                    }
-
+                    <Article titre="Les tartines" giveNombreArticle={(x) => this.nombreArticles(x)} />
+                    <Article titre="Coding School" giveNombreArticle={(x) => this.nombreArticles(x)} />
                 </div>
             </section>
         )

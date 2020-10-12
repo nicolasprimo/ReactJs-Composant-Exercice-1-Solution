@@ -3,11 +3,12 @@ import './css/article.css';
 import toast from './images/toast.jpg'
 
 class Article extends React.Component {
+    nombreArticle = 2;
     render() {
         return (
             <Fragment>
                 <div className="article">
-                    <button onClick={() => console.log(this.props.titre)}>Quel est le titre</button>
+                    <button onClick={() => this.props.giveNombreArticle(this.nombreArticle)}>Quel est le titre</button>
                     <div className="d-left">
                         <img src={toast} alt="toast" className="img-fluid" />
                     </div>
